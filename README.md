@@ -1,4 +1,4 @@
-# ProjetBTS
+# Projet : BTS Sondage
 
 Lors de mon BTS, j'ai réalisé un projet : Faire un site de sondage.
 
