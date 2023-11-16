@@ -1,0 +1,400 @@
+/*--- Importation des 2 style d'écriture ---*/
+	@import url(https://fonts.googleapis.com/css?family=Euphoria+Script);/* -> Écriture Eurphoria (Exemple : "Joyeux Halloween") */
+	@import url('https://fonts.googleapis.com/css2?family=Creepster');/* -> Écriture Creepster (Exemple : les titres ou les boutons) */
+
+/*--- Information sur le fond ---*/
+	html, body {
+	  width: 100%;
+	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	  background: #ff8833;
+	  overflow: hidden;
+	}
+
+/*--- Center : Balise, h1, audio ---*/
+	h1, audio{
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	h1{
+		font-size: 80px;
+		color: rgba(104, 54, 0, 0.8);
+	}
+
+
+
+
+/*--- Doc : Index.html ---*/
+	/*--- Audio ---*/
+		audio{
+			top:90%;
+		}
+		audio:hover {
+			transform: scale(1.1);
+			filter: drop-shadow(2px 3px 3px #333);
+		}
+
+
+	/*--- Les textes ---*/
+		.txt1 {
+			font-family: 'Creepster', cursive;
+			font-size: 100px;
+			top:20px;
+		}
+		.txt2 {
+			font-family: 'Creepster', cursive;
+			font-size: 55px;
+			top:150px;
+		}
+		.txt3 {
+			font-family: 'Euphoria Script';
+			font-size: 20px;
+			top:610px;
+		}
+		.txt4 {
+			text-align: left;
+			margin-left: 10px;
+			font-family: 'Euphoria Script';
+			font-size: 20px;
+			top:0px;
+		}
+
+
+	/*--- Les boutons ---*/
+		/*-- Bouton Globale --*/
+			.btn{
+				position: absolute;
+				color: rgba(104, 54, 0, 0.8);
+				text-decoration: none;
+				font-family: 'Creepster';
+				
+				padding: 10px;
+				font-size: 30px;
+				top:300px;
+				border: 3px solid rgba(104, 54, 0, 1);
+				padding: 10px;
+				text-align: center;
+				border-radius: 37px;
+			}
+			.btn:hover{
+				color: #ff8833;
+				background-color: rgba(104, 54, 0, 0.8);
+				border: 3px solid rgba(104, 54, 0, 0.8);
+				transition: 0.5s all;
+			}
+
+		/*-- Bouton Vote --*/
+			.btnVote{
+				top:315px;
+				left: 45%;
+				right: 45%;
+			}
+		
+		/*-- Bouton Resultat --*/
+			.btnResultat{
+				top:415px;
+				left: 45%;
+				right: 45%;
+			}
+		
+		/*-- Bouton Connexion --*/
+			.btnConnexion{
+				top:15px;
+				left: 87%;
+			}
+
+		
+		
+			
+/*--- Doc : Vote.html ---*/
+	/*--- Box ---*/
+		/*-- Information --*/
+			#boxG{
+				position: absolute;
+				border: 5px solid rgba(104, 54, 0, 0.9);
+				top:350px;
+				left: 10%;
+				right: 55%;
+			}
+			
+			#text{
+				margin-left:50px;
+			}
+		
+		/*-- Sondage --*/
+			#boxD{
+				position: absolute;
+				border: 5px solid rgba(104, 54, 0, 0.9);
+				top:390px;
+				left: 55%;
+				right: 10%;
+			}
+			
+			#sondage{
+				text-align: center;
+			}
+
+	/*--- Les boutons ---*/
+		/*-- Envoyer --*/
+			.btnEnvoyer{
+				top:620px;
+				left: 45%;
+				right: 45%;
+				background-color: #ff8833;
+			}
+
+
+
+
+/*--- Doc : Votes.php ---*/
+	/*--- Les boutons ---*/
+		/*-- Retour --*/	
+			.btnRetour{
+				background-color: #ff8833;
+				font-family: 'Creepster';
+				top:400px;
+				left: 45%;
+				right: 45%;
+			}
+
+
+
+
+/*--- Doc : Resultat.php ---*/
+	/*--- Camenbert ---*/	
+		.imgCamenbert{
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			text-align: center;
+			top:250px;
+		}
+		
+		/*-- Retour --*/	
+		.btnRetour2{
+			background-color: #ff8833;
+			font-family: 'Creepster';
+			top:600px;
+			left: 45%;
+			right: 45%;
+		}
+
+
+
+
+/*--- Doc : Connexion.html ---*/
+	/*--- Les boutons ---*/
+		/*-- Bouton Connexion --*/
+			.btnConnexion2{
+				top:520px;
+				left: 45%;
+				right: 45%;
+				background-color: #ff8833;
+			}
+			
+		/*-- Bouton Retour --*/	
+			.btnRetour3{
+				background-color: #ff8833;
+				font-family: 'Creepster';
+				top:620px;
+				left: 45%;
+				right: 45%;
+			}
+	
+	
+	/* Box Centre */
+		.boxC{
+			top:390px;
+			text-align: center;
+		}
+
+
+
+
+/*--- Doc : Résultat ---*/
+	/*-- Diaporama Image --*/
+	/* Le carrousel d'images a été pris sur internet, j'ai seulement rajouté les images */
+		.diapo{
+			top:215px;
+		}
+
+		#slideshow {
+			position: relative;
+			width: 640px;
+			height: 310px;
+			padding: 15px;
+			margin: 0 auto 2em;
+			border: 1px solid #ddd;
+			background: #FFF;
+			/* CSS3 effects */
+			background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+			border-radius: 2px 2px 2px 2px;
+			box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+		}
+		 
+		/* avanced box-shadow
+		 * tutorial @
+		 * https://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow 
+		*/
+		#slideshow:before,
+		#slideshow:after {
+			position: absolute;
+			bottom:16px;
+			z-index: -10;
+			width: 50%;
+			height: 20px;
+			content: " ";
+			background: rgba(0,0,0,0.1);
+			border-radius: 50%;
+			box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+		}
+		#slideshow:before {
+			left:0;
+			transform: rotate(-4deg);
+		}
+		#slideshow:after {
+			right:0;
+			transform: rotate(4deg);
+		}
+
+		/* Gestion des dimensions et débordement du conteneur */
+		#slideshow .container {
+			position:relative;
+			width: 640px;
+			height: 310px;
+			overflow: hidden;
+		}
+			
+		/* On prévoit un petit espace gris pour la timeline */
+		#slideshow .container:after {
+			position:absolute;
+			bottom: 0; left:0;
+			content: " ";
+			width: 100%;
+			height: 1px;
+			background: #999;
+		}
+		/* 
+		   le conteneur des slides
+		   en largeur il fait 100% x le nombre de slides
+		*/
+		#slideshow .slider {
+			position: absolute;
+			left:0; top:0;
+			width: 400%;
+			height: 310px;
+		}
+
+		/* Annulation des marges sur figures */
+		#slideshow figure {
+			position:relative;
+			display:inline-block;
+			padding:0; margin:0;
+		}
+		/* Petit effet de vignette sur les images */
+		#slideshow figure:after {
+			position: absolute;
+			display:block;
+			content: " ";
+			top:0; left:0;
+			width: 100%; height: 100%;
+			box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+		}
+
+		/* Style de nos légendes */
+		#slideshow figcaption {
+			position:absolute;
+			left:0; right:0; bottom: 5px;
+			padding: 20px;
+			margin:0;
+			border-top: 1px solid rgb(225,225,225);
+			text-align:center;
+			letter-spacing: 0.05em;
+			word-spacing: 0.05em;
+			font-family: Georgia, Times, serif;
+			background: #fff;
+			background: rgba(255,255,255,0.7);
+			color: #555;
+			text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+		}
+
+		/* Fonctions d'animation, n'oubliez pas de préfixer ! */
+		@keyframes slider {
+			0%, 20%, 100%	{ left: 0 }
+			25%, 45%		{ left: -100% }
+			50%, 70%		{ left: -200% }
+			75%, 95%		{ left: -300% }
+		}
+
+		/* Complétez le sélecteur : */
+		#slideshow .slider {
+			/* ... avec la propriété animation */
+			animation: slider 32s infinite;
+		}
+
+		/* Animation de la ligne de temps (ligne en bas) */
+		#timeline {
+			position: absolute;
+			background: #999;
+			bottom: 15px;
+			left: 15px;
+			height: 1px;
+			background: rgb(214,98,13);
+			background: rgba(214,98,13,.8);
+			width: 0;
+			/* Fonction d'animation */
+			animation: timeliner 32s infinite;
+		}
+
+		@keyframes timeliner {
+			0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+			20%, 45%, 70%, 90%		{ width: 640px;	}
+		}
+
+		/* Animation de la légende */
+		@keyframes figcaptionner {
+			0%, 25%, 50%, 75%, 100%						{ bottom: -55px;	}
+			5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
+		}
+
+		/* Ajouter à l'élément : */
+		#slideshow figcaption {
+			/* ... la propriété animation */
+			animation: figcaptionner 32s infinite;
+		}
+
+
+
+/*--- Doc : Admin.php ---*/
+	/*--- Les boutons ---*/
+		/*-- Bouton Reset --*/
+			.btnReset2{
+				background-color: #ff8833;
+				top:90px;
+				left: 87%;
+			}
+
+	/*--- Box ---*/
+		/*-- Lieux --*/
+			#boxLieu{
+				position: absolute;
+				border: 5px solid rgba(104, 54, 0, 0.9);
+				top:175px;
+				left: 87%;
+			}
+
+/*--- Doc : Reset.php ---*/
+	/*--- Les boutons ---*/
+		/*-- Bouton Retour --*/
+			.btnRetour4{
+				background-color: #ff8833;
+				top:90px;
+				left: 87%;
+			}

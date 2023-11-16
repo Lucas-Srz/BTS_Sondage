@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Connexion</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png" />
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	
+	<body>
+		<!--- Texte --->
+			<h1 class="txt2">Connexion au compte</h1>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+		<!--- Box pour l'utilisateur et le mot de passe  --->
+			<div class="boxC">
+				<div class="connexion">
+					<form method="post" action="../php/admin.php">
+						Nom d'utilisateur : 
+							<input name="utilisateur" type="text" size="15" maxlength ="20"><br><br>
+						Mots de passe : 
+							<input name="mot_de_passe" type="password" size="15" maxlength ="20"><br><br>
+						<input type="submit" value="Connexion" class="btn btnConnexion2">
+					</form>
+				</div>
+			</div>
+		
+		<!--- Bouton retour --->
+			<a class="btn btnRetour3" href="../index.php">Retour</a>
+		
+	</body>
+</html>

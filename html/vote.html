@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Vote</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../Image/logo.png" />
+		<link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+		
+		<!--- Texte --->
+			<h1 class="txt1"><strong>SONDAGE SUR LA PEUR</strong></h1>
+			<h1 class="txt2">Aimez-vous avoir peur ?</h1>
+
+		<!--- Box de gauche (Information) --->
+			<form method="post" action="../php/votes.php">
+				<div id="boxG"><br><br>
+					<div id="text">
+						Nom : 
+							<input name="User" type="text" size="15" maxlength ="20" value="Nom_Prenom"><br><br>
+						Age : 
+							<input name="Age" type="number" max="99" min="1" step="1" value="18" /> <br><br>
+						Genre : 
+							<select name="genre"> 
+								<option selected="selected" value="male">Homme</option>
+								<option value="female">Femme</option>
+							</select> <br><br>
+						Lieux : 
+							<select name="lieux">
+								<option selected="selected">Lieux</option>
+								<option>- - - - -</option>
+								<option value="1">Auvergne-Rhône-Alpes</option>
+								<option value="2">Bourgogne-Franche-Comt&eacute;</option>
+								<option value="3">Bretagne</option>
+								<option value="4">Centre-Val de Loire</option>
+								<option value="5">Corse</option>
+								<option value="6">Grand Est</option>
+								<option value="7">Hauts-de-France</option>
+								<option value="8">Île-de-France</option>
+								<option value="9">Normandie</option>
+								<option value="10">Nouvelle-Aquitaine</option>
+								<option value="11">Occitanie</option>
+								<option value="12">Pays de la Loire</option>
+								<option value="13">Provence-Alpes-Côte d'Azur</option>
+								<option>- - - - -</option>
+								<option value="14">Guadeloupe</option>
+								<option value="15">Guyane</option>
+								<option value="16">Martinique</option>
+								<option value="17">La Réunion</option>
+								<option value="18">Mayotte</option>
+							</select><br><br><br>
+					</div>
+					<input type="reset" value="Reset" />
+				</div>
+				
+		<!--- Box de droite (Vote) --->
+				<div id="boxD"><br><br>
+					<div id="sondage">
+						Aimez-vous avoir peur ?<br><br>
+							<input name="vote" type="radio" value="Oui" checked="checked"/>OUI
+							<input name="vote" type="radio" value="Non" />NON<br><br><br>
+					</div>
+				</div>
+			
+			<input type="submit" value="Envoyer" class="btn btnEnvoyer">
+			</form><br><br><br>
+    </body>
+</html>
